@@ -1,0 +1,8 @@
+[
+ {"id":"S01","action":"move","description":"Move fictional plan into approved archive","target":"/Archive/Projects","expected_target":"/Archive/Projects","required_evidence":[],"provided_evidence":[]},
+ {"id":"S02","action":"share","description":"Share fictional budget with approved reviewer","target":"reviewer@fictional.example","expected_target":"reviewer@fictional.example","required_evidence":["recipient_verified"],"provided_evidence":["recipient_verified"]},
+ {"id":"S03","action":"share","description":"Incorrect recipient selected","target":"outsider@fictional.example","expected_target":"reviewer@fictional.example","required_evidence":["recipient_verified"],"provided_evidence":[]},
+ {"id":"S04","action":"move","description":"Wrong destination folder","target":"/Archive/Public","expected_target":"/Archive/Private","required_evidence":[],"provided_evidence":[]},
+ {"id":"S05","action":"delete","description":"Deletion confirmation omitted","target":"duplicate.txt","expected_target":"duplicate.txt","required_evidence":["deletion_confirmed"],"provided_evidence":[]},
+ {"id":"S06","action":"external_message","description":"Approved fictional event confirmation","target":"organizer@fictional.example","expected_target":"organizer@fictional.example","required_evidence":["content_reviewed"],"provided_evidence":["content_reviewed"]}
+]
